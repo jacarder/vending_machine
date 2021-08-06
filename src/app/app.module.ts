@@ -10,7 +10,6 @@ import {MatNativeDateModule} from '@angular/material/core';
 
 import { AppComponent } from './app.component';
 import { LedDisplayComponent } from './components/led-display/led-display.component';
-import { VendingItemComponent } from './components/vending-item/vending-item.component';
 import { VendingTrayComponent } from './components/vending-tray/vending-tray.component';
 import { VendingItemDisplayComponent } from './components/vending-item-display/vending-item-display.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -24,7 +23,6 @@ import { ReactiveFormsModule } from '@angular/forms';
   declarations: [
     AppComponent,
     LedDisplayComponent,
-    VendingItemComponent,
     VendingTrayComponent,
     VendingItemDisplayComponent,
     PowerButtonComponent,
