@@ -1,6 +1,6 @@
 # VendingMachine
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.0.
+WIP. Cause payment error by using security code '333'
 
 ## Development server
 
