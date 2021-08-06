@@ -1,6 +1,6 @@
 # VendingMachine
 
-WIP. Cause payment error by using security code '333'
+WIP
 
 ## Development server
 
