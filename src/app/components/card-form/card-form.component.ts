@@ -1,7 +1,7 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Subscription } from 'rxjs';
-import { CardReaderRequest } from 'src/app/models';
+import { CardReaderRequest, VendingItem } from 'src/app/models';
 
 
 @Component({
@@ -10,7 +10,6 @@ import { CardReaderRequest } from 'src/app/models';
   styleUrls: ['./card-form.component.scss']
 })
 export class CardFormComponent implements OnInit {
-
   @Output() cardReaderRequest: EventEmitter<CardReaderRequest> = new EventEmitter<CardReaderRequest>();
 
   cardForm: FormGroup;
