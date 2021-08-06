@@ -1,0 +1,19 @@
+<div class="control-container">
+	<div class="input-container">
+		<card-form (cardReaderRequest)="cardReaderRequest = $event"></card-form>
+	</div>
+	<div class="arrows-container">
+		<button mat-fab color="primary" (click)="backward()" reset> 
+			<mat-icon>arrow_back</mat-icon>
+		</button>
+		<div class="pay-container">
+			<button mat-raised-button [disabled]="selectedItem.quantity <= 0" color="primary" (click)="payForItem()" reset>
+				<mat-icon>paid</mat-icon>
+				Pay
+			</button>
+		</div>		
+		<button mat-fab color="primary" (click)="forward()" reset>
+			<mat-icon>arrow_forward</mat-icon>
+		</button>
+	</div>
+</div>

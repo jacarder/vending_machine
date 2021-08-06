@@ -1,0 +1,7 @@
+<div class="tray-container">
+	<ng-container *ngIf="tray$ | async as tray">
+		<span *ngFor="let item of tray.items; let last = last">
+			{{item.quantity}} {{item.displayName}}{{!last ? ',' : '.'}} 
+		</span>
+	</ng-container>
+</div>

@@ -1,0 +1,10 @@
+@import '../variables.scss';
+
+.vending-machine-container {
+    width: 50%;
+    margin: auto;
+    background: lightgray;
+    border: 2px solid black;
+    border-radius: $default-border-radius;
+    padding: 5px 5px 5px 5px;
+}

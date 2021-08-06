@@ -1,0 +1,22 @@
+<form [formGroup]="cardForm">
+	<mat-form-field appearance="fill">
+		<mat-label>Card Number</mat-label>
+		<input matInput type="text" formControlName="cardNumber">
+		<mat-error *ngIf="cardNumber?.errors?.minlength">
+			Card Number should have more than {{ cardNumber?.errors?.minlength?.requiredLength }} characters.
+		</mat-error>
+		<mat-error *ngIf="cardNumber?.errors?.maxlength">
+			Card Number should have less than {{ cardNumber?.errors?.maxlength?.requiredLength }} characters.
+		</mat-error>		
+	</mat-form-field>
+	<mat-form-field appearance="fill">
+		<mat-label>Expiration Date</mat-label>
+		<input matInput [matDatepicker]="picker" formControlName="expirationDate">
+		<mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+		<mat-datepicker #picker></mat-datepicker>
+	</mat-form-field>
+	<mat-form-field appearance="fill">
+		<mat-label>Security Code</mat-label>
+		<input matInput type="text" formControlName="securityCode">
+	</mat-form-field>
+</form>
